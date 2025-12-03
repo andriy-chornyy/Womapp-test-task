@@ -1,0 +1,85 @@
+@use './styles/utils/reset.scss';
+@use './App.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Roboto:wght@400;700&display=swap');
+
+:root{
+  --background: rgba(229, 229, 220, 1);
+  --color-main-text: rgba(26, 26, 26, 1);
+  --color-title: rgba(0, 92, 173, 1);
+
+  --header-bg: rgba(0, 36, 58, 0.8);
+
+  &.dark {
+    --background: rgb(26, 26, 26);
+    --color-main-text: rgb(255, 255, 255);
+    --color-title: rgb(0, 255, 255);
+
+    --header-bg: rgba(0, 92, 173, 0.7);
+  }
+}
+
+.page__body {
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  font-style: normal;
+  color: var(--color-main-text);
+
+  background-color: var(--background);
+}
+
+.main {
+  padding: 80px 22px 36px;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 34px;
+  letter-spacing: 0.25px;
+  line-height: 1.24;
+  color: var(--color-title);
+  text-align: center;
+}
+
+.subtitle {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-style: normal; 
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.15px;
+  text-align: center;
+}
+
+
+
+
+
+
+// ... сюда подключаем reset.scss и другие глобальные стили ...
+// @import './utils/mixins';
+
+// @font-face {
+//   font-family: 'Mont';
+//   src: url('/fonts/Mont-Regular.otf') format('opentype');
+//   font-weight: 600;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Mont';
+//   src: url('/fonts/Mont-SemiBold.otf') format('opentype');
+//   font-weight: 700;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Mont';
+//   src: url('/fonts/Mont-Bold.otf') format('opentype');
+//   font-weight: 800;
+//   font-style: normal;
+// }
