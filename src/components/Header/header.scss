@@ -26,6 +26,7 @@
     border-radius: 64px;
     padding: 4px 8px 4px 16px;
     background-color: var(--header-bg);
+    backdrop-filter: blur(6px);
   
     box-shadow: -2.82px -2.82px 8.49px 0px rgba(255, 255, 255, 0.3),
       14.15px 14.15px 22.64px -0.37px rgba(0, 0, 0, 0.1),
