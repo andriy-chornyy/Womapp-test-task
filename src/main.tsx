@@ -1,8 +1,12 @@
 import { createRoot } from 'react-dom/client';
 import { App } from './App.tsx';
 
-const element = document.querySelector('#root') as HTMLElement;
+const rootElement = document.querySelector('#root'); 
 
-createRoot(element).render(
-  <App />
-);
+if (rootElement) {
+  createRoot(rootElement).render(
+    <App />
+  );
+} else {
+  console.error("Помилка: Кореневий елемент DOM (#root) не знайдено.");
+}
