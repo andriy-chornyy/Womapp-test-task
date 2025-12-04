@@ -9,7 +9,7 @@ export const Actions = () => {
       <button className="sign-in__button">Sign in</button>
 
       <button className="burger-menu-button" aria-label="Open navigation menu">
-        <img className="burger-icon" src="/burger.svg" alt="Burger icon"></img>
+        <img className="burger-icon" src="./burger.svg" alt="Burger icon"></img>
       </button>
     </div>
   );

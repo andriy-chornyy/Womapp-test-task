@@ -31,11 +31,11 @@ export const Switcher = () => {
         {isNightMode ? (
           <img
             className="night-icon"
-            src="/night-icon.svg"
+            src="./night-icon.svg"
             alt="Night theme icon"
           />
         ) : (
-          <img className="sunny" src="/sunny.svg" alt="Day theme icon" />
+          <img className="sunny" src="./sunny.svg" alt="Day theme icon" />
         )}
       </div>
     </div>
