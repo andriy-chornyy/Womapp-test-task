@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./switcher.scss";
 
 export const Switcher = () => {
@@ -16,13 +16,23 @@ export const Switcher = () => {
     setIsNightMode((prevMode) => !prevMode);
   };
 
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === " " || event.key === "Enter") {
+      event.preventDefault();
+
+      handleSwitcherClick();
+    }
+  };
+
   return (
     <div
       className="switcher"
       onClick={handleSwitcherClick}
+      onKeyDown={handleKeyDown}
       aria-checked={isNightMode}
       role="switch"
       tabIndex={0}
+      aria-label="Перемикач нічного/денного режиму"
     >
       <div
         className={`switcher__indicator ${
