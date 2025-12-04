@@ -1,4 +1,4 @@
-import "./Actions.scss";
+import "./actions.scss";
 import { Switcher } from "../Switcher";
 
 export const Actions = () => {
@@ -6,9 +6,9 @@ export const Actions = () => {
     <div className="actions">
       <Switcher />
 
-      <button className="sign-in__button">Sign in</button>
+      <button className="sign-in__button" type="button">Sign in</button>
 
-      <button className="burger-menu-button" aria-label="Open navigation menu">
+      <button className="burger-menu-button" aria-label="Open navigation menu" type="button">
         <img className="burger-icon" src="./burger.svg" alt="Burger icon"></img>
       </button>
     </div>

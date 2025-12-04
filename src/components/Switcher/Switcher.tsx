@@ -22,6 +22,7 @@ export const Switcher = () => {
       onClick={handleSwitcherClick}
       aria-checked={isNightMode}
       role="switch"
+      tabIndex={0}
     >
       <div
         className={`switcher__indicator ${
