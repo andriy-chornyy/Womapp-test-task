@@ -1,73 +1,40 @@
-# React + TypeScript + Vite
+<h1 align="center">💎 Womapp — task 💎</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📄 About the project
+- Fully responsive layout for Desktop, Tablet, and Mobile (>320px)
+- React + TypeScript for scalable, typed components
+- SCSS with modular structure: variables, mixins
+- CSS Modules for component-scoped styles
+- Flexbox layout techniques
+- Smooth hover effects, image scaling, and transitions
 
-Currently, two official plugins are available:
+<h3><a href="https://andriy-chornyy.github.io/Womapp-test-task/" target="_blank">👉 DEMO</a></h3> 
+<h3><a href="https://www.figma.com/design/J2iyb9iYY63O9kqJkwBHNo/Test?node-id=1-535&t=vvrYXeVtYPOpge5K-0" target="_blank">🎨 Figma Design</a></h3>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Built With
 
-## React Compiler
+- <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white&style=for-the-badge" alt="React" />
+- <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge" alt="TypeScript" />
+- <img src="https://img.shields.io/badge/Vite-C1352A?logo=vite&logoColor=white&style=for-the-badge" alt="Vite" />
+- <img src="https://img.shields.io/badge/SCSS-CC6699?logo=sass&logoColor=white&style=for-the-badge" alt="SCSS" />
+- <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge" alt="HTML5" />
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Installation / How to run
+1. Clone the repository:
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+git clone https://github.com/andriy-chornyy/Womapp-test-task.git
 ```
+2. Navigate to the project folder:
+```
+cd Womapp-test-task
+```
+3. Install dependencies:
+```
+npm install
+```
+4. Start the local development server:
+```
+npm start
+```
+5. Open http://localhost:5173 in your browser to view the page.
