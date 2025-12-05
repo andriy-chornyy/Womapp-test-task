@@ -52,12 +52,19 @@
     .logo-link {
       display: flex;
       border-radius: 50px;
-      transition: box-shadow 0.1s ease, backdrop-filter 0.1s ease-in-out;
+      transform: scale(1);
+      transition: transform 0.2s ease, filter 0.2s ease;
 
-      @include utils.glass-hover-effect;
+      &:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0 3px 1px rgba(0, 0, 0, 0.5));
+      }
 
       &:active {
         @include utils.glass-active-effect;
+
+        transform: scale(0.95);
+        filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
       }
     }
   }
