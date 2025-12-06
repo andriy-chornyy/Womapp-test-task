@@ -46,7 +46,7 @@ export const Switcher = () => {
             alt="Night theme icon"
           />
         ) : (
-          <img className="sunny" src="./sunny.svg" alt="Day theme icon" />
+          <img className="sunny" src="./sun.svg" alt="Day theme icon" />
         )}
       </div>
     </div>
